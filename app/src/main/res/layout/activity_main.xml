@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="288dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/bgquestion"
+        android:gravity="center">
+
+        <TextView
+            style="@style/Widget.MaterialComponents.TextView"
+            android:layout_width="305dp"
+            android:layout_height="71dp"
+            android:gravity="center"
+            android:text=" Welcom to the Game  "
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:fontFamily="@font/abril_fatface"
+            tools:textAppearance="@style/TextAppearance.AppCompat.Body1"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+
+        >
+
+        <TextView
+            android:id="@+id/Score"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/bgpink"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            app:fontFamily="@font/abril_fatface"
+            android:text="0 PT"></TextView>
+
+        <TextView
+            android:id="@+id/Try"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginLeft="172dp"
+            android:text="---"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            app:fontFamily="@font/abril_fatface"
+            android:background="@drawable/bgpink"
+            android:gravity="center"></TextView>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/shuffled_word"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="24sp"
+        android:text="-------------"
+        android:textColor="@color/black"
+        app:fontFamily="@font/abril_fatface"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/myresponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="---------------- "
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="60dp"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        app:fontFamily="@font/abril_fatface"
+        android:layout_gravity="center"
+    />
+    <Button
+        android:id="@+id/next_words"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgpink"
+        android:text="Next"
+        android:textColor="@color/black"
+        app:fontFamily="@font/abril_fatface"
+        android:layout_gravity="center"
+        ></Button>
+
+
+</LinearLayout>
